@@ -1,0 +1,21 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Prompt the user for their name
+        Console.Write("Enter your name: ");
+        string userName = Console.ReadLine();
+
+        // Display a personalized greeting
+        if (!string.IsNullOrEmpty(userName))
+        {
+            Console.WriteLine($"Hello, {userName}! This is a simple C# application.");
+        }
+        else
+        {
+            Console.WriteLine("You didn't enter a name. Goodbye!");
+        }
+    }
+}
